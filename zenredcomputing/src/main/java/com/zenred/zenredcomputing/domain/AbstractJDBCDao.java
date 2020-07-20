@@ -10,7 +10,8 @@ public abstract class AbstractJDBCDao {
 	
 	public static SimpleJdbcDaoSupport jdbcSetUp() {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		// driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		/*
 		 * driverManagerDataSource
 		 * .setUrl("jdbc:mysql://sherpadb.matrix.cc/email_advert");
@@ -39,7 +40,8 @@ public abstract class AbstractJDBCDao {
 
 	public static SimpleJdbcDaoSupport jdbcJohnTReddenSetUp() {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		// driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		/*
 		 * driverManagerDataSource
 		 * .setUrl("jdbc:mysql://sherpadb.matrix.cc/email_advert");
@@ -68,7 +70,8 @@ public abstract class AbstractJDBCDao {
 
 	public static SimpleJdbcInsert jdbcInsertSetup() {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		// driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 
 		driverManagerDataSource
 				.setUrl("jdbc:mysql://localhost/zenredcomputing");
